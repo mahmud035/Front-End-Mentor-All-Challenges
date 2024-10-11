@@ -10,14 +10,13 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/mahmud035/fylo-data-storage-component-frontEndMentor)
-- Live Site URL: [Add live site URL here](https://mahmud035.github.io/fylo-data-storage-component-frontEndMentor/)
+- **Live Site URL**: [Fylo data storage component](https://fylo-data-storage-component-0.netlify.app/)
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
+- FlexBox
 - CSS Grid
 - CSS Position
 - CSS chat bubbles
