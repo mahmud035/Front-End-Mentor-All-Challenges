@@ -10,10 +10,10 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Generate a new piece of advice by clicking the dice icon
 
-- Live Site URL: [Advice generator app](https://mahmud035.github.io/advice-generator-app-frontEndMentor/)
+- **Live Site URL**: [Advice generator app](https://advice-generator-00.netlify.app/)
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
+- FlexBox
