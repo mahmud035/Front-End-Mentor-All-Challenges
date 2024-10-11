@@ -10,6 +10,8 @@ Thanks for checking out this front-end coding challenge.
 
 **To do this challenge, anyone need a good understanding of HTML, CSS, and JavaScript.**
 
+<h2>👉 <a href="https://rest-countries-api-with-color-theme.netlify.app/">Live Website</a></h2>
+
 ## The challenge
 
 Challenge is to integrate with the [REST Countries API](https://restcountries.com) to pull country data and display it like in the designs.
