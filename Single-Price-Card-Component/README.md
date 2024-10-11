@@ -1,4 +1,6 @@
-# Frontend Mentor - Single price grid component
+# Frontend Mentor - Single price card component
+
+- **Live Site URL**: [Single price card component](https://single-price-card-component-0.netlify.app/)
 
 ### Desktop
 
