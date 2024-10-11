@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  /*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Improve media defaults */
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Remove built-in form typography styles */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Create Custom Scroll-Bar */
+::-webkit-scrollbar {
+  width: 10px;
+  background: #c5cadf;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #70768a;
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #454f6b;
+}
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --white: #fff;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+/* Common CSS Classes */
+.container {
+  max-width: 1440px;
+  width: 80%;
+  margin-inline: auto;
+}
+
+/** Single Price Card Component */
+.main-container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 350px 350px;
+  grid-template-areas:
+    'community community'
+    'subscription about-us';
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.community {
+  grid-area: community;
+  background-color: var(--white);
+}
+
+.subscription {
+  grid-area: subscription;
+  background-color: var(--cyan);
+}
+
+.about-us {
+  grid-area: about-us;
+  background-color: #54c1bf;
+}
+
+.community,
+.subscription,
+.about-us {
+  padding: 2.5rem;
+}
+
+.community h1 {
+  color: var(--cyan);
+  padding-bottom: 1.5rem;
+}
+
+.community p:nth-child(2) {
+  color: #99b229;
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.community p:nth-child(3) {
+  line-height: 26px;
+  width: 85%;
+  color: var(--grayish-blue);
+}
+
+.subscription h2,
+.about-us h2 {
+  font-size: 22px;
+  color: #f2f2f2;
+  padding-bottom: 1.3rem;
+}
+
+.subscription p:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 10px;
+}
+
+.subscription p strong {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.subscription p small {
+  font-size: 16px;
+  color: #e6e6e6;
+}
+
+.subscription p:nth-child(3) {
+  /* color: #f2f2f2; */
+  color: #edf8f8;
+  padding-bottom: 2rem;
+}
+
+.subscription a.btn {
+  display: block;
+  color: #fff;
+  background-color: #acc82e;
+  font-weight: 700;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  margin-right: 1.3rem;
+}
+
+.subscription a.btn:hover {
+  background-color: var(--bright-yellow);
+}
+
+.about-us p {
+  color: #edf8f8;
+  line-height: 24px;
+}

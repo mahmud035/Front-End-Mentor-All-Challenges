@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FavIcon -->
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media-query.css" />
+    <title>Fylo Data Storage Component</title>
+  </head>
+  <body>
+    <!-- Data Storage Component -->
+    <section class="card-container">
+      <!-- icon-card -->
+      <div class="icon-card">
+        <div class="brand-name">
+          <img src="./images/logo.svg" alt="" class="logo" />
+        </div>
+        <div class="icons">
+          <div>
+            <img src="./images/icon-document.svg" alt="" />
+          </div>
+          <div>
+            <img src="./images/icon-folder.svg" alt="" />
+          </div>
+          <div>
+            <img src="./images/icon-upload.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- storage-card -->
+      <div class="storage-card">
+        <p>You've used <span> 815 GB </span>of your storage</p>
+        <div class="total-storage">
+          <div class="used-storage">
+            <div class="white-circle-container">
+              <div class="white-circle"></div>
+            </div>
+          </div>
+        </div>
+        <div class="storage-quantity">
+          <small>0 GB</small>
+          <small>1000 GB</small>
+        </div>
+        <!-- INFO: Used two storage div for desktop and mobile devices. -->
+        <div class="storage-remain">
+          <div class="talk-bubble tri-right btm-right">
+            <div class="talktext">
+              <h1>185</h1>
+              <p>GB LEFT</p>
+            </div>
+          </div>
+        </div>
+        <div class="storage-left">
+          <h1>185</h1>
+          <p>GB LEFT</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Javascript Link -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  /*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Improve media defaults */
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Remove built-in form typography styles */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Create Custom Scroll-Bar */
+::-webkit-scrollbar {
+  width: 10px;
+  background: #c5cadf;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #70768a;
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #454f6b;
+}
+
+/* Custom Property */
+:root {
+  --moderate-violet: hsl(263, 55%, 52%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Common CSS Classes */
+.container {
+  max-width: 1440px;
+  width: 90%;
+  margin-inline: auto;
+}
+
+/** Testimonials Grid Section */
+.main-container {
+  width: 100vw;
+  min-height: 100vh;
+  background: var(--light-grayish-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  padding: 3rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  grid-template-areas:
+    'card-1 card-1 card-2 card-5'
+    'card-3 card-4 card-4 card-5';
+  gap: 1.5rem;
+}
+
+.card {
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.card-1 {
+  grid-area: card-1;
+  background: url(../images/bg-pattern-quotation.svg) no-repeat;
+  background-position: 80% 0%;
+  background-color: var(--moderate-violet);
+}
+
+.card-2 {
+  grid-area: card-2;
+  background-color: var(--very-dark-grayish-blue);
+}
+
+.card-3 {
+  grid-area: card-3;
+  background-color: var(--white);
+}
+
+.card-4 {
+  grid-area: card-4;
+  background-color: var(--very-dark-blackish-blue);
+}
+
+.card-5 {
+  grid-area: card-5;
+  background-color: var(--white);
+}
+
+.card .user-info {
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+.card .user-info img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card .user-name h3 {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.card .user-name p {
+  font-size: 15px;
+  padding-top: 3px;
+}
+
+.card h4 {
+  font-size: 20px;
+  padding-bottom: 1.3rem;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.card > p:last-child {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.card-1 > h4,
+.card-2 > h4,
+.card-4 > h4 {
+  color: var(--white);
+}
+
+.card-3 > h4,
+.card-5 > h4 {
+  color: var(--very-dark-blackish-blue);
+}
+
+/* Individual card style */
+
+/* card-1 */
+.card-1 img {
+  border: 2px solid #a775f1;
+}
+
+.card-1 .user-name h3,
+.card-2 .user-name h3 {
+  color: var(--light-grayish-blue);
+}
+
+.card-1 .user-name p,
+.card-2 .user-name p {
+  color: hsl(210, 46%, 95%, 0.5);
+}
+
+.card-1 > p:last-child,
+.card-2 > p:last-child {
+  color: hsl(210, 46%, 95%, 0.7);
+}
+
+/* card-2 */
+.card-2 img {
+  border: 2px solid var(--white);
+}
+
+/* card-3 */
+
+.card-3 .user-name h3,
+.card-5 .user-name h3 {
+  color: var(--very-dark-grayish-blue);
+}
+
+.card-3 .user-name p,
+.card-5 .user-name p {
+  color: hsl(217, 19%, 35%, 0.5);
+}
+
+.card-3 > p:last-child,
+.card-5 > p:last-child {
+  color: hsl(217, 19%, 35%, 0.7);
+}
+
+/* card-4 */
+.card-4 img {
+  border: 2px solid #a775f1;
+}
+
+.card-4 .user-name h3 {
+  color: var(--white);
+}
+
+.card-4 .user-name p {
+  color: hsl(0, 0%, 100%, 0.5);
+}
+
+.card-4 > p:last-child {
+  color: hsl(0, 0%, 100%, 0.7);
+}

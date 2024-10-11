@@ -1,0 +1,17 @@
+@media (max-width: 576px) {
+  /** 3-Column-Preview-Card */
+
+  .card-container {
+    grid-template-columns: 320px;
+  }
+
+  .card-sedans {
+    background-color: var(--bright-orange);
+    border-radius: 8px 8px 0 0;
+  }
+
+  .card-luxury {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0 8px 8px;
+  }
+}
